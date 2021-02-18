@@ -1,0 +1,69 @@
+{
+  "customerName": "John",
+  "customerId": "123",
+  "transactions": [
+    {
+      "transactionId": "1",
+      "transferredFrom": "AA",
+      "transferredTo": "",
+      "transactionDate": "20/01/2021",
+      "transactionAmount": "100",
+      "transactionType": "Credit"
+    },
+    {
+      "transactionId": "1",
+      "transferredFrom": "AA",
+      "transferredTo": "",
+      "transactionDate": "20/01/2021",
+      "transactionAmount": "100",
+      "transactionType": "Credit"
+    },
+    {
+      "transactionId": "1",
+      "transferredFrom": "AA",
+      "transferredTo": "",
+      "transactionDate": "20/01/2021",
+      "transactionAmount": "100",
+      "transactionType": "Credit"
+    },
+    {
+      "transactionId": "1",
+      "transferredFrom": "AA",
+      "transferredTo": "",
+      "transactionDate": "20/01/2021",
+      "transactionAmount": "100",
+      "transactionType": "Credit"
+    },
+    {
+      "transactionId": "1",
+      "transferredFrom": "AA",
+      "transferredTo": "",
+      "transactionDate": "20/01/2021",
+      "transactionAmount": "100",
+      "transactionType": "Credit"
+    },  {
+      "transactionId": "1",
+      "transferredFrom": "AA",
+      "transferredTo": "",
+      "transactionDate": "20/01/2021",
+      "transactionAmount": "100",
+      "transactionType": "Credit"
+    },
+    {
+      "transactionId": "1",
+      "transferredFrom": "AA",
+      "transferredTo": "",
+      "transactionDate": "20/01/2021",
+      "transactionAmount": "100",
+      "transactionType": "Credit"
+    },
+    {
+      "transactionId": "1",
+      "transferredFrom": "AA",
+      "transferredTo": "",
+      "transactionDate": "20/01/2021",
+      "transactionAmount": "100",
+      "transactionType": "Credit"
+    }
+  ]
+}
