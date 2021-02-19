@@ -13,17 +13,7 @@ public class BalanceController implements HttpFunction {
     @Override
   public void service(HttpRequest request, HttpResponse response) throws Exception {
     BufferedWriter writer = response.getWriter();
-    writer.write({
-  "fulfillmentMessages": [
-    {
-      "text": {
-        "text": [
-          "Your Current Balance is 50,000 INR"
-        ]
-      }
-    }
-  ]
-});
+    writer.write("Your Current Balance is 50,000 INR");
   }
     
 }
