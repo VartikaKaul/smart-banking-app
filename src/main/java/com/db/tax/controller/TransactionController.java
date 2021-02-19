@@ -17,7 +17,7 @@ public class TransactionController implements HttpFunction {
       @Override
   public void service(HttpRequest request, HttpResponse response) throws Exception {
     BufferedWriter writer = response.getWriter();
-    writer.write(new String(Files.readAllBytes(Paths.get(new ClassPathResource("data.json").getFile().getPath()))));
+    writer.write(new String(Files.readAllBytes(Paths.get("src\\main\\resources\\data.json"))));
   }    
   
 }
