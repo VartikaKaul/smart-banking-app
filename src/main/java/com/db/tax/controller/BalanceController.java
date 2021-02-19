@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.google.cloud.functions.HttpFunction;
 import com.google.cloud.functions.HttpRequest;
 import com.google.cloud.functions.HttpResponse;
+import java.io.BufferedWriter;
 
 @RestController()
 public class BalanceController implements HttpFunction {
@@ -14,8 +15,5 @@ public class BalanceController implements HttpFunction {
     BufferedWriter writer = response.getWriter();
     writer.write("50,0000 INR");
   }
-    @GetMapping("/checkBalance")
-    public String checkBalance() {
-        return "50000.00 INR";
-    }
+    
 }
