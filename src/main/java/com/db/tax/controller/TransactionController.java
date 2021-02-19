@@ -17,12 +17,7 @@ public class TransactionController implements HttpFunction {
       @Override
   public void service(HttpRequest request, HttpResponse response) throws Exception {
     BufferedWriter writer = response.getWriter();
-    writer.write("Hello world!");
-  }
-    
-    @GetMapping("/getTransactions")
-    public String getTransactions() throws IOException {
-        System.out.println("Hello Smart Banking");
-        return new String(Files.readAllBytes(Paths.get(new ClassPathResource("data.json").getFile().getAbsolutePath())));
-    }
+    writer.write(new String(Files.readAllBytes(Paths.get(new ClassPathResource("data.json").getFile().getAbsolutePath()))));
+  }    
+  
 }
