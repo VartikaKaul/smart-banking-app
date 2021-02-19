@@ -17,75 +17,75 @@ public class TransactionController implements HttpFunction {
       @Override
   public void service(HttpRequest request, HttpResponse response) throws Exception {
     BufferedWriter writer = response.getWriter();
-    String outputData = "{
-  "customerName": "John",
-  "customerId": "123",
-  "transactions": [
-    {
-      "transactionId": "1",
-      "transferredFrom": "AA",
-      "transferredTo": "",
-      "transactionDate": "20/01/2021",
-      "transactionAmount": "100",
-      "transactionType": "Credit"
-    },
-    {
-      "transactionId": "1",
-      "transferredFrom": "AA",
-      "transferredTo": "",
-      "transactionDate": "20/01/2021",
-      "transactionAmount": "100",
-      "transactionType": "Credit"
-    },
-    {
-      "transactionId": "1",
-      "transferredFrom": "AA",
-      "transferredTo": "",
-      "transactionDate": "20/01/2021",
-      "transactionAmount": "100",
-      "transactionType": "Credit"
-    },
-    {
-      "transactionId": "1",
-      "transferredFrom": "AA",
-      "transferredTo": "",
-      "transactionDate": "20/01/2021",
-      "transactionAmount": "100",
-      "transactionType": "Credit"
-    },
-    {
-      "transactionId": "1",
-      "transferredFrom": "AA",
-      "transferredTo": "",
-      "transactionDate": "20/01/2021",
-      "transactionAmount": "100",
-      "transactionType": "Credit"
-    },  {
-      "transactionId": "1",
-      "transferredFrom": "AA",
-      "transferredTo": "",
-      "transactionDate": "20/01/2021",
-      "transactionAmount": "100",
-      "transactionType": "Credit"
-    },
-    {
-      "transactionId": "1",
-      "transferredFrom": "AA",
-      "transferredTo": "",
-      "transactionDate": "20/01/2021",
-      "transactionAmount": "100",
-      "transactionType": "Credit"
-    },
-    {
-      "transactionId": "1",
-      "transferredFrom": "AA",
-      "transferredTo": "",
-      "transactionDate": "20/01/2021",
-      "transactionAmount": "100",
-      "transactionType": "Credit"
-    }
-  ]
-}";
+    String outputData = "{\n" +
+ " \"customerName\": \"John\",\n" +
+ " \"customerId\": \"123\",\n" +
+ " \"transactions\": [\n" +
+ " {\n" +
+ " \"transactionId\": \"1\",\n" +
+ " \"transferredFrom\": \"AA\",\n" +
+ " \"transferredTo\": \"\",\n" +
+ " \"transactionDate\": \"20/01/2021\",\n" +
+ " \"transactionAmount\": \"100\",\n" +
+ " \"transactionType\": \"Credit\"\n" +
+ " },\n" +
+ " {\n" +
+ " \"transactionId\": \"1\",\n" +
+ " \"transferredFrom\": \"AA\",\n" +
+ " \"transferredTo\": \"\",\n" +
+ " \"transactionDate\": \"20/01/2021\",\n" +
+ " \"transactionAmount\": \"100\",\n" +
+ " \"transactionType\": \"Credit\"\n" +
+ " },\n" +
+ " {\n" +
+ " \"transactionId\": \"1\",\n" +
+ " \"transferredFrom\": \"AA\",\n" +
+ " \"transferredTo\": \"\",\n" +
+ " \"transactionDate\": \"20/01/2021\",\n" +
+ " \"transactionAmount\": \"100\",\n" +
+ " \"transactionType\": \"Credit\"\n" +
+ " },\n" +
+ " {\n" +
+ " \"transactionId\": \"1\",\n" +
+ " \"transferredFrom\": \"AA\",\n" +
+ " \"transferredTo\": \"\",\n" +
+ " \"transactionDate\": \"20/01/2021\",\n" +
+ " \"transactionAmount\": \"100\",\n" +
+ " \"transactionType\": \"Credit\"\n" +
+ " },\n" +
+ " {\n" +
+ " \"transactionId\": \"1\",\n" +
+ " \"transferredFrom\": \"AA\",\n" +
+ " \"transferredTo\": \"\",\n" +
+ " \"transactionDate\": \"20/01/2021\",\n" +
+ " \"transactionAmount\": \"100\",\n" +
+ " \"transactionType\": \"Credit\"\n" +
+ " }, {\n" +
+ " \"transactionId\": \"1\",\n" +
+ " \"transferredFrom\": \"AA\",\n" +
+ " \"transferredTo\": \"\",\n" +
+ " \"transactionDate\": \"20/01/2021\",\n" +
+ " \"transactionAmount\": \"100\",\n" +
+ " \"transactionType\": \"Credit\"\n" +
+ " },\n" +
+ " {\n" +
+ " \"transactionId\": \"1\",\n" +
+ " \"transferredFrom\": \"AA\",\n" +
+ " \"transferredTo\": \"\",\n" +
+ " \"transactionDate\": \"20/01/2021\",\n" +
+ " \"transactionAmount\": \"100\",\n" +
+ " \"transactionType\": \"Credit\"\n" +
+ " },\n" +
+ " {\n" +
+ " \"transactionId\": \"1\",\n" +
+ " \"transferredFrom\": \"AA\",\n" +
+ " \"transferredTo\": \"\",\n" +
+ " \"transactionDate\": \"20/01/2021\",\n" +
+ " \"transactionAmount\": \"100\",\n" +
+ " \"transactionType\": \"Credit\"\n" +
+ " }\n" +
+ " ]\n" +
+ "}";
     writer.write(outputData);
   }    
   
