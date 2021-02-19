@@ -17,7 +17,76 @@ public class TransactionController implements HttpFunction {
       @Override
   public void service(HttpRequest request, HttpResponse response) throws Exception {
     BufferedWriter writer = response.getWriter();
-    writer.write(new String(Files.readAllBytes(Paths.get("src\\main\\resources\\data.json"))));
+    String outputData = "{
+  "customerName": "John",
+  "customerId": "123",
+  "transactions": [
+    {
+      "transactionId": "1",
+      "transferredFrom": "AA",
+      "transferredTo": "",
+      "transactionDate": "20/01/2021",
+      "transactionAmount": "100",
+      "transactionType": "Credit"
+    },
+    {
+      "transactionId": "1",
+      "transferredFrom": "AA",
+      "transferredTo": "",
+      "transactionDate": "20/01/2021",
+      "transactionAmount": "100",
+      "transactionType": "Credit"
+    },
+    {
+      "transactionId": "1",
+      "transferredFrom": "AA",
+      "transferredTo": "",
+      "transactionDate": "20/01/2021",
+      "transactionAmount": "100",
+      "transactionType": "Credit"
+    },
+    {
+      "transactionId": "1",
+      "transferredFrom": "AA",
+      "transferredTo": "",
+      "transactionDate": "20/01/2021",
+      "transactionAmount": "100",
+      "transactionType": "Credit"
+    },
+    {
+      "transactionId": "1",
+      "transferredFrom": "AA",
+      "transferredTo": "",
+      "transactionDate": "20/01/2021",
+      "transactionAmount": "100",
+      "transactionType": "Credit"
+    },  {
+      "transactionId": "1",
+      "transferredFrom": "AA",
+      "transferredTo": "",
+      "transactionDate": "20/01/2021",
+      "transactionAmount": "100",
+      "transactionType": "Credit"
+    },
+    {
+      "transactionId": "1",
+      "transferredFrom": "AA",
+      "transferredTo": "",
+      "transactionDate": "20/01/2021",
+      "transactionAmount": "100",
+      "transactionType": "Credit"
+    },
+    {
+      "transactionId": "1",
+      "transferredFrom": "AA",
+      "transferredTo": "",
+      "transactionDate": "20/01/2021",
+      "transactionAmount": "100",
+      "transactionType": "Credit"
+    }
+  ]
+}";
+    writer.write(outputData);
   }    
   
 }
