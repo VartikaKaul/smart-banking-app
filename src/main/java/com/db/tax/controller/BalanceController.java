@@ -15,20 +15,14 @@ import com.google.gson.JsonObject;
 public class BalanceController implements HttpFunction {
 
     @Override
-  public void service(HttpRequest request, HttpResponse response) throws Exception {
-//         System.out.println(request.getBody());
-//        BufferedReader reader = request.getReader();
-//         JSONTokener tokener = new JSONTokener(reader);
-//         JSONObject json = new JSONObject(tokener);
-//         System.out.println(json.get("request.body.queryResult.paramters.givenName"));
-//         System.out.println(json.get("request.body.queryResult.paramters.unitCurrency.amount"));
-String name;
-JsonObject body = gson.fromJson(request.getReader(), JsonObject.class);
-JSONObject qresult = body.getJSONObject("queryResult");
-System.out.println("Body req" + body.toString());
-System.out.println("QueryResult" + qresult.toString());
-BufferedWriter writer = response.getWriter();
-String responseString = "Request Received";
-writer.write(responseString);
-  }
+    public void service(HttpRequest request, HttpResponse response) throws Exception {
+        String name;
+        JsonObject body = gson.fromJson(request.getReader(), JsonObject.class);
+        JSONObject qresult = body.getJSONObject("queryResult");
+        System.out.println("Body req" + body.toString());
+        System.out.println("QueryResult" + qresult.toString());
+        BufferedWriter writer = response.getWriter();
+        String responseString = "Request Received";
+        writer.write(responseString);
+    }
 }
