@@ -14,11 +14,12 @@ public class BalanceController implements HttpFunction {
 
     @Override
   public void service(HttpRequest request, HttpResponse response) throws Exception {
-         BufferedReader reader = request.getReader();
+        System.out.println(request.getBody());
+       /*  BufferedReader reader = request.getReader();
         JSONTokener tokener = new JSONTokener(reader);
         JSONObject json = new JSONObject(tokener);
         System.out.println(json.get("request.body.queryResult.paramters.givenName"));
-        System.out.println(json.get("request.body.queryResult.paramters.unitCurrency.amount"));
+        System.out.println(json.get("request.body.queryResult.paramters.unitCurrency.amount"));*/
         BufferedWriter writer = response.getWriter();
         String responseString = "Request Received";
         writer.write(responseString);
