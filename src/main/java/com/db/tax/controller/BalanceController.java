@@ -13,7 +13,7 @@ public class BalanceController implements HttpFunction {
 
     @Override
     public void service(HttpRequest request, HttpResponse response) throws Exception {
-        private static final Gson gson = new Gson();
+        Gson gson = new Gson();
         String name;
         JsonObject body = gson.fromJson(request.getReader(), JsonObject.class);
        // JSONObject qresult = body.getJSONObject("queryResult");
