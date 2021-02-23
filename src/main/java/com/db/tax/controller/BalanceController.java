@@ -11,8 +11,14 @@ public class BalanceController implements HttpFunction {
 
     @Override
   public void service(HttpRequest request, HttpResponse response) throws Exception {
-    BufferedWriter writer = response.getWriter();
-    writer.write("Your Current Balance is 50,000 INR");
+         BufferedReader reader = request.getReader();
+        JSONTokener tokener = new JSONTokener(reader);
+        JSONObject json = new JSONObject(tokener);
+        System.out.println(json.get("request.body.queryResult.paramters.givenName"));
+        System.out.println(json.get("request.body.queryResult.paramters.unitCurrency.amount"));
+        BufferedWriter writer = response.getWriter();
+        String responseString = "Request Received";
+        writer.write(responseString);
   }
     
 }
