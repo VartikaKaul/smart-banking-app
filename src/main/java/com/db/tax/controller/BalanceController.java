@@ -22,14 +22,13 @@ public class BalanceController implements HttpFunction {
 //         JSONObject json = new JSONObject(tokener);
 //         System.out.println(json.get("request.body.queryResult.paramters.givenName"));
 //         System.out.println(json.get("request.body.queryResult.paramters.unitCurrency.amount"));
-          String name;
-
-      JsonObject body = gson.fromJson(request.getReader(), JsonObject.class);
-	JSONObject qresult = body.getJSONObject("queryResult"); 
-      System.out.println("Body req"+ body.toString());
-      System.out.println("QueryResult" + qresult.toString());
-       BufferedWriter writer = response.getWriter();
-        String responseString = "Request Received";
-        writer.write(responseString);
+String name;
+JsonObject body = gson.fromJson(request.getReader(), JsonObject.class);
+JSONObject qresult = body.getJSONObject("queryResult");
+System.out.println("Body req" + body.toString());
+System.out.println("QueryResult" + qresult.toString());
+BufferedWriter writer = response.getWriter();
+String responseString = "Request Received";
+writer.write(responseString);
   }
 }
